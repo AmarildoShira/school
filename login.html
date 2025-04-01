@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoja Randë - Admin Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Restaurant_Logo.jpeg" alt="Logo e Restorantit">
+        </div>
+        <h1>Zemra e traditës, shija e shtëpisë</h1>
+    </header>
+    
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Rezervimi</a></li>
+            <li><a href="about.html">Rreth nesh</a></li>
+            <li><a href="comments.html">Komente</a></li>
+            <li><a href="login.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="loginForm">
+            <label for="adminEmail">Email:</label>
+            <input type="email" id="adminEmail" required>
+
+            <label for="adminPassword">Fjalëkalimi:</label>
+            <input type="password" id="adminPassword" required>
+
+            <button type="submit">Hyr</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Restoranti "Zoja Randë". Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+    
+</body>
+</html>

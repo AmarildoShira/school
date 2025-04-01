@@ -1,0 +1,126 @@
+/* Background and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #900;
+    color: white;
+    font-size: 24px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logout-btn {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Main History Section */
+.history-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* White Background for Text */
+.history-text {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.history-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Image Gallery - Responsive & Dynamic Layout */
+.group-images {
+    margin-top: 40px;
+}
+
+.group-images h2 {
+    font-size: 22px;
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+/* Making images flexible and dynamic */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Images adjust dynamically */
+.image-gallery img {
+    width: 22%; /* Adaptive width */
+    height: 180px; /* Keep a lower height */
+    object-fit: cover; /* Crop instead of stretching */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.image-gallery img:hover {
+    transform: scale(1.5);
+    opacity: 0.9;
+}
+
+/* Responsive Design - Adjusting for smaller screens */
+@media screen and (max-width: 1024px) {
+    .image-gallery img {
+        width: 30%; /* Larger on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-gallery img {
+        width: 45%; /* Two per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-gallery img {
+        width: 90%; /* One per row on mobile */
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #900;
+    color: white;
+    margin-top: 50px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoja Randë - Komente</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Restaurant_Logo.jpeg" alt="Logo e Restorantit">
+        </div>
+        <h1>Zemra e traditës, shija e shtëpisë</h1>
+    </header>
+    
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Rezervimi</a></li>
+            <li><a href="about.html">Rreth nesh</a></li>
+            <li><a href="comments.html">Komente</a></li>
+            <li><a href="login.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div id="comment-container">
+        <h2>Komente dhe Vlerësime</h2>
+
+        <form id="commentForm" action="https://formsubmit.co/restorantzojarande@gmail.com" method="POST">
+            <label for="comment">Komenti juaj:</label>
+            <textarea name="Komenti" id="comment" maxlength="100" placeholder="Maksimumi 100 karaktere"></textarea>
+            <p id="charCount">Maksimumi 100 karaktere</p>
+
+            <label for="rating">Vlerësimi:</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="Vlerësimi" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="Vlerësimi" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="Vlerësimi" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="Vlerësimi" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="Vlerësimi" value="1"><label for="star1">★</label>
+            </div>
+            
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Restoranti "Zoja Randë". Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+</body>
+</html>

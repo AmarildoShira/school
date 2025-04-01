@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoja Randë - Rreth Nesh</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="about-page"> <!-- Added class for custom styling -->
+
+    <header>
+        <div class="logo">
+            <img src="Restaurant_Logo.jpeg" alt="Logo e Restorantit">
+        </div>
+        <h1>Zemra e traditës, shija e shtëpisë</h1>
+    </header>
+    
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Rezervimi</a></li>
+            <li><a href="about.html">Rreth nesh</a></li>
+            <li><a href="comments.html">Komente</a></li>
+            <li><a href="login.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <h2>Rreth Nesh</h2>
+        <p><strong>Vendi:</strong> Surrel, Dajt, Tiranë, Shqipëri</p>
+
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/zojarande/profilecard/?igsh=eHpkejJxYmd5aXoz" target="_blank" class="social-btn instagram"></a>
+            <a href="https://www.facebook.com/share/15pobcGTQq/?mibextid=wwXIfr" target="_blank" class="social-btn facebook"></a>
+        </div>
+
+        <h3>Informacion mbi Tavolinat</h3>
+        <ul>
+            <li>Kati i parë: Kapaciteti maksimal 60 persona</li>
+            <li>Kati përdhes: Kapaciteti maksimal 40 persona</li>
+            <li>Veranda: Kapaciteti maksimal 24 persona</li>
+        </ul>
+
+        <h3>2D dhe 3D e restorantit</h3>
+        <div class="media-container">
+            <img src="Rest_Plan.jpg" alt="Planimetria 2D e restorantit" class="about-image">
+            <video id="hoverVideo" class="about-video" width="400" height="300" muted loop>
+                <source src="3D_Rest.mp4" type="video/mp4">
+                Shfletuesi juaj nuk e mbështet videon.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Restoranti "Zoja Randë". Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+</body>
+</html>
