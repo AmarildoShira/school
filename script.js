@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     method: commentForm.method,
                     body: new FormData(commentForm)
                 }).then(response => {
-                    window.location.href = "home.html"; // Redirect to home.html after successful submission
+                    window.location.href = "index.html"; // Redirect to home.html after successful submission
                 }).catch(error => console.error('Gabim gjatë dërgimit:', error));
             });
         }
